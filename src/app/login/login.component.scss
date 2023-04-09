@@ -1,0 +1,43 @@
+h2 {
+  text-align: center;
+  color: midnightblue;
+  background-color: beige;
+  margin-top: 1vh;
+  margin-left : 1vw;
+  margin-right : 1vw;
+  padding:0.5%;
+  font-family: 'Century Gothic';
+  border-radius: 0.3vw;
+}
+
+div.formClass{
+  align-items: center;
+  border-radius: 0.3vw;
+  margin-left : 1vw;
+  margin-right : 1vw;
+  height:80vh;
+  background-color: beige;
+}
+
+label{
+    font-family: 'Century Gothic';
+    color: indigo;
+    padding:1%;
+
+}
+
+button{
+    font-family: 'Century Gothic';
+    color:darkgreen;
+    background-color:lightgreen;
+    border-radius: 0.3vw;
+    padding: 0.5%;
+    
+}
+
+button:hover{
+    font-weight: bold;
+    background-color: greenyellow;
+    font-family: 'Century Gothic';
+    
+}
