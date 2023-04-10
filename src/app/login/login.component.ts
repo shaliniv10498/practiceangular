@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 
+
 @Component({
     selector : 'app-login',
     templateUrl : './login.component.html',
@@ -8,5 +9,11 @@ import { Component } from "@angular/core";
 })
 
 export class LoginComponent {
-    
+    username = 'shalini';
+    password = '';
+
+    handleLogin=()=>{
+        console.log(this.username);
+        console.log('inside handleLogin');
+    }
 }
