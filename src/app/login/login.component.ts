@@ -11,8 +11,16 @@ import { Component } from "@angular/core";
 export class LoginComponent {
     username = 'shalini';
     password = '';
+    errorMessage = 'Invalid Credentials';
+    inValidLogin = false;
 
     handleLogin=()=>{
+        if(this.username == 'shalini' && this.password == 'shalini'){
+            this.inValidLogin=false;
+        }
+        else{
+            this.inValidLogin=true;
+        }
         console.log(this.username);
         console.log('inside handleLogin');
     }
