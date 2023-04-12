@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 
 @Component({
@@ -14,8 +15,12 @@ export class LoginComponent {
     errorMessage = 'Invalid Credentials';
     inValidLogin = false;
 
+    constructor(private router:Router){} //dependency injection & router variable becomes available as member variable
+    // private ensures router variable is not used outside this class
     handleLogin=()=>{
         if(this.username == 'shalini' && this.password == 'shalini'){
+            //redirect to welcome page
+            this.router.navigate(['welcome',this.username]); //the second param will go as path variable
             this.inValidLogin=false;
         }
         else{
